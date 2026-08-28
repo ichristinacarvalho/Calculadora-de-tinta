@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de tinta</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Calculadora de tinta</h1>
+        <p>Calcule o quanto irá precisar de tinta para sua reforma.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Área de cálculo</h2>
+
+            <label for="largura">Largura:</label>
+            <input id="largura" name="largura" type="number" placeholder="Ex: 50" required>
+
+            <label for="altura">Altura:</label>
+            <input id="altura" name="altura" type="number" placeholder="Ex:20" required>
+
+            <button type="button" onclick="calcular()">Calcular</button>
+            <button type="button" onclick="limparCampos()">Limpar campos</button>
+        </section>
+
+        <section>
+            <h2>Resultado</h2>
+            <p id="area"></p>
+            <p id="litros"></p>
+        </section>
+
+    </main>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
